@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "TipoProducto": "Digital",
+    "TamanoMB": 80,
+    "Id": "002",
+    "Nombre": "Phones Iphone Chinos",
+    "Precio": 5000,
+    "CantidadEnStock": 10
+  },
+  {
+    "TipoProducto": "Digital",
+    "TamanoMB": 67,
+    "Id": "004",
+    "Nombre": "Don Perez",
+    "Precio": 199,
+    "CantidadEnStock": 10
+  }
+]
