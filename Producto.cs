@@ -1,39 +1,35 @@
-public abstract class Producto {  
-        private decimal precio;
-        private int cantidadEnStock;
+    using System.Text.Json.Serialization;
+    
+    [JsonPolymorphic(TypeDiscriminatorPropertyName = "TipoProducto")]
+    [JsonDerivedType(typeof(ProductoFisico), typeDiscriminator: "Fisico")]
+    [JsonDerivedType(typeof(ProductoDigital), typeDiscriminator: "Digital")]
+    public abstract class Producto
+    {
+        private decimal _precio;
+        private int _cantidadEnStock;
 
         public string Id { get; set; }
         public string Nombre { get; set; }
 
         public decimal Precio
         {
-            get { return precio; }   
+            get => _precio;
             set 
             { 
-                if (value >= 0)
-                {
-                    precio = value;
-                }
-                else
-                {
-                    throw new ArgumentException("El precio no puede ser un valor negativo.");
-                }
+                if (value < 0)
+                    throw new ArgumentException("El precio no puede ser negativo.");
+                _precio = value;
             }
         }
 
         public int CantidadEnStock
         {
-            get { return cantidadEnStock; }
+            get => _cantidadEnStock;
             set 
             { 
-                if (value >= 0)
-                {
-                    cantidadEnStock = value;
-                }
-                else
-                {
-                    throw new ArgumentException("La cantidad en stock no puede ser negativa.");
-                }
+                if (value < 0)
+                    throw new ArgumentException("El stock no puede ser negativo.");
+                _cantidadEnStock = value;
             }
         }
 
@@ -46,4 +42,4 @@ public abstract class Producto {
         }
 
         public abstract void MostrarDetalles();
-}
+    }
