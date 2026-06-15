@@ -7,7 +7,7 @@ public abstract class Producto {
 
         public decimal Precio
         {
-            get { return precio; }
+            get { return precio; }   
             set 
             { 
                 if (value >= 0)
