@@ -14,5 +14,13 @@
     "Nombre": "Don Perez",
     "Precio": 199,
     "CantidadEnStock": 10
+  },
+  {
+    "TipoProducto": "Fisico",
+    "Peso": -50,
+    "Id": "001",
+    "Nombre": "pollo",
+    "Precio": 100,
+    "CantidadEnStock": 100
   }
 ]
