@@ -1,26 +1,10 @@
 [
   {
-    "TipoProducto": "Digital",
-    "TamanoMB": 80,
-    "Id": "002",
-    "Nombre": "Phones Iphone Chinos",
-    "Precio": 5000,
-    "CantidadEnStock": 10
-  },
-  {
-    "TipoProducto": "Digital",
-    "TamanoMB": 67,
-    "Id": "004",
-    "Nombre": "Don Perez",
-    "Precio": 199,
-    "CantidadEnStock": 10
-  },
-  {
     "TipoProducto": "Fisico",
-    "Peso": -50,
+    "Peso": 1,
     "Id": "001",
-    "Nombre": "pollo",
-    "Precio": 100,
-    "CantidadEnStock": 100
+    "Nombre": "Mangos",
+    "Precio": 20,
+    "CantidadEnStock": 40
   }
 ]
